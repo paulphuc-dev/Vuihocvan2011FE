@@ -1,0 +1,143 @@
+body {
+    background: #f4ecd8;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-box {
+    max-width: 700px;
+    margin: auto;
+    background: #fdf6e3;
+    min-height: 100vh;
+}
+
+.question-box {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.option {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.option:hover {
+    background: #f8f1d4;
+}
+
+.submit-btn {
+    background: #f28c5b;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* ===== Overlay ===== */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== Popup ===== */
+.popup {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  width: 420px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== Chart + Stats layout ===== */
+.charts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* ===== Donut Chart ===== */
+.chart-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+}
+
+/* đảm bảo canvas không làm lệch */
+.chart-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* text % chính giữa tuyệt đối */
+.chart-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+
+  pointer-events: none;
+}
+
+/* ===== Stats ===== */
+.stats {
+  text-align: left;
+  font-size: 16px;
+}
+
+.stats p {
+  margin: 8px 0;
+}
+
+/* ===== Detail ===== */
+#detail {
+  margin-top: 15px;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* scroll đẹp hơn */
+#detail::-webkit-scrollbar {
+  width: 6px;
+}
+
+#detail::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* ===== Button ===== */
+.popup button {
+  margin-top: 15px;
+  border-radius: 20px;
+  padding: 8px 20px;
+}
