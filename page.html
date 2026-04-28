@@ -19,13 +19,13 @@
                 <h1 class="text-center mb-4"></h1>
 
                 <!-- Audio -->
-                <!--<div class="d-flex align-items-center gap-2 mb-3">
+                <div id="audio" class="d-flex align-items-center gap-2 mb-3">
                     <button class="btn btn-light play-btn">▶</button>
                     <div class="progress flex-grow-1" style="height:6px;">
-                    <div class="progress-bar" style="width:30%"></div>
+                        <div class="progress-bar"></div>
                     </div>
-                    <small>5:30</small>
-                </div>-->
+                    <small class="audio-time">0:00 / 0:00</small>
+                </div>
 
                 <!-- Image -->
                 <div class="text-center my-4">
@@ -38,16 +38,15 @@
                 </div>
 
                 <!-- Chat -->
-                <!--<div class="chat-box p-3">
+                <div class="chat-box p-3">
                     <div id="messages">
-                        <div class="msg msg-you">Hello</div>
-                        <div class="msg msg-ai">Xin chào 👋</div>
+                        
                     </div>
                 </div>
                 <div class="d-flex gap-2 mt-2">
                     <input id="input" class="form-control rounded-pill">
-                    <button onclick="sendMsg()" class="btn btn-warning rounded-pill">Gửi</button>
-                </div>-->
+                    <button id="send" class="btn btn-warning rounded-pill">Hỏi</button>
+                </div>
             </div>
         </div>
         <div class="d-flex justify-content-end mt-3">

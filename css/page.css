@@ -71,12 +71,15 @@ h4 {
 .chat-box {
   height: 250px;
   overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
   border: 1px solid #ccc;
   border-radius: 15px;
   padding: 10px;
+}
+
+#messages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* khoảng cách dọc giữa các tin nhắn */
 }
 
 .msg {
