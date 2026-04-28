@@ -1,5 +1,5 @@
-//const BASE_URL = "https://vuihocvan2011be.onrender.com/api";
-const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = "https://vuihocvan2011be.onrender.com/api";
+//const BASE_URL = "http://localhost:3000/api";
 const SRC_URL = "https://vuihocvan2011be.onrender.com";
 
 const joinUrl = (base, path) => {
